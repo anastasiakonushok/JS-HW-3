@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>HW3</title>
+</head>
+
+<body>
+  <div class="wrapp">
+
+    <div class="left-box">
+      <button class="clear-btn" onclick="clearLeft()">Clear</button>
+      <label class="label">
+        <textarea name="" id="textarea" cols="50" rows="20"></textarea>
+      </label>
+    </div>
+    <button class="convert-btn" onclick="convertText()">Convert</button>
+
+    <div class="right-box">
+      <div class="right-btn">
+        <button class="clear-btn" onclick="clearRight()">Clear</button>
+        <select class="color-select" onchange="swithColor()">
+          <option value="black">Black</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+        </select>
+      </div>
+      <div class="right-text" id="right-text">
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <script src="./hw3.js"></script>
+</body>
+
+</html>
